@@ -24,3 +24,7 @@ Usage
 * If you want to stub out dependent cookbooks:
     1. open `spec/spec_helper.rb` and uncomment lines 17, 18 and 19.
 * If you don't have dependent cookbooks, then you need not do a thing!
+
+Note that when using ChefSpec and loading dependent cookbooks, you will be loading any cookbooks in directories parallel
+to the current cookbook. This is because of the way Chef Solo works. In order to test cookbooks in isolation, you must move
+them into their own directory. See https://github.com/acrmp/chefspec/issues/78.
