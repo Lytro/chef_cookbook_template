@@ -20,10 +20,11 @@ Usage
 * If you want your specs to run against dependent cookbooks:
     1. add them to the `Cheffile`
     2. install them via `librarian-chef install`
-    3. open `spec/spec_helper.rb`, then delete line 10 and uncomment lines 11 and 12.
-* If you want to stub out dependent cookbooks:
-    1. open `spec/spec_helper.rb` and uncomment lines 17, 18 and 19.
-* If you don't have dependent cookbooks, then you need not do a thing!
+    3. open `spec/spec_helper.rb`, then delete lines 11-13, 21 and 22, and uncomment lines 23 and 24.
+* If you want to stub out dependent cookbooks and included recipes:
+    1. open `spec/spec_helper.rb` and delete lines 22-24.
+* If you don't have dependent cookbooks, then:
+    1. open `spec/spec_helper.rb` and delete lines 11-13 and 22-24.
 
 Note that when using ChefSpec and loading dependent cookbooks, you will be loading any cookbooks in directories parallel
 to the current cookbook. This is because of the way Chef Solo works. In order to test cookbooks in isolation, you must move
