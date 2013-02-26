@@ -1,16 +1,12 @@
-Chef_Cookbook_Template
-==========
+# Chef_Cookbook_Template
 
-Description
------------
+## Description
 A template for Chef Cookbooks. Includes three gems: [chefspec](https://github.com/acrmp/chefspec), [fauxhai](https://github.com/customink/fauxhai), and [librarian-chef](https://github.com/applicationsonline/librarian).
 
-Requirements
-------------
+## Requirements
+None.
 
-
-Usage
------
+## Usage
 1. Clone this repo using `git clone git://github.com/Lytro/chef_cookbook_template.git YOUR_COOKBOOK_NAME`
 2. Search and replace "chef_cookbook_template" with the name of your cookbook (preserve case if you want to be fancy)
 3. Update the maintainer and maintainer_email in `metadata.rb`
@@ -23,3 +19,9 @@ Usage
 Note that when using ChefSpec and loading dependent cookbooks, you will be loading any cookbooks in directories parallel
 to the current cookbook. This is because of the way Chef Solo works. In order to test cookbooks in isolation, you must move
 them into their own directory. See https://github.com/acrmp/chefspec/issues/78.
+
+## Recipes
+List your recipes and what they do in here.
+
+## Attributes
+List your attributes, what they control, and what the defaults are in here.
